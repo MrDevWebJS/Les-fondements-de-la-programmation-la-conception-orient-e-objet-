@@ -1,0 +1,30 @@
+.main__creatingClasses{
+    inline-size: 100%;
+    block-size: auto;
+}
+
+.creatingClasses__title,
+.creatingClasses__subTitle{
+    color: #3b82f6;
+    margin: 8px 0;
+}
+
+.creatingClasses__title{
+    font-size: 1.75rem;
+}
+
+.creatingClasses__subTitle{
+    font-size: 1.5rem;
+}
+
+.creatingClasses__paragraph,
+.creatingClasses__descriptiveList,
+.creatingClasses__numberedDescriptiveList{
+    font-size: 1rem;
+    inline-size: 599px;
+}
+
+.creatingClasses__descriptiveList,
+.creatingClasses__numberedDescriptiveList{
+    margin-left: 16px;
+}

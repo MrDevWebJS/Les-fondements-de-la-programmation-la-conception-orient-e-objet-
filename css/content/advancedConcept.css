@@ -1,0 +1,23 @@
+.main__advancedConcept{
+    inline-size: 100%;
+    block-size: auto;
+}
+
+.advancedConcept__title,
+.advancedConcept__subTitle{
+    color: #3b82f6;
+    margin: 8px 0;
+}
+
+.advancedConcept__title{
+    font-size: 1.75rem;
+}
+
+.advancedConcept__subTitle{
+    font-size: 1.5rem;
+}
+
+.advancedConcept__paragraph{
+    font-size: 1rem;
+    inline-size: 599px;
+}

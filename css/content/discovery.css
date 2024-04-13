@@ -1,0 +1,23 @@
+.main__discovery{
+    inline-size: 100%;
+    block-size: auto;
+}
+
+.discovery__title,
+.discovery__subTitle{
+    color: #3b82f6;
+    margin: 8px 0;
+}
+
+.discovery__title{
+    font-size: 1.75rem;
+}
+
+.discovery__subTitle{
+    font-size: 1.5rem;
+}
+
+.discovery__paragraph{
+    font-size: 1rem;
+    inline-size: 599px;
+}

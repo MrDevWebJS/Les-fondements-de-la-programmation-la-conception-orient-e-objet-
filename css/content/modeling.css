@@ -1,0 +1,28 @@
+.main__modeling{
+    inline-size: 100%;
+    block-size: auto;
+}
+
+.modeling__title,
+.modeling__subTitle{
+    color: #3b82f6;
+    margin: 8px 0;
+}
+
+.modeling__title{
+    font-size: 1.75rem;
+}
+
+.modeling__subTitle{
+    font-size: 1.5rem;
+}
+
+.modeling__paragraph,
+.modeling__descriptiveList{
+    font-size: 1rem;
+    inline-size: 599px;
+}
+
+.modeling__descriptiveList{
+    margin-left: 16px;
+}

@@ -1,0 +1,27 @@
+.main__designPatterns{
+    inline-size: 100%;
+    block-size: auto;
+}
+
+.designPatterns__title,
+.designPatterns__subTitle{
+    color: #3b82f6;
+    margin: 8px 0;
+}
+
+.designPatterns__title{
+    font-size: 1.75rem;
+}
+
+.designPatterns__subTitle{
+    font-size: 1.5rem;
+}
+
+.designPatterns__paragraph{
+    font-size: 1rem;
+    inline-size: 599px;
+}
+
+.designPatterns__numberedDescriptiveList{
+    margin-left: 16px;
+}

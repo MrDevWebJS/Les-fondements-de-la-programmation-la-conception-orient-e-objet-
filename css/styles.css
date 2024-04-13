@@ -1,0 +1,17 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Tangerine:wght@400;700&display=swap');
+
+/* Layout */
+@import url("layout/container.css");
+@import url("layout/header.css");
+@import url("layout/main.css");
+
+/* Content */
+@import url("content/basicConcepts.css");
+@import url("content/analyseAProblem.css");
+@import url("content/useCases.css");
+@import url("content/modeling.css");
+@import url("content/creatingClasses.css");
+@import url("content/discovery.css");
+@import url("content/advancedConcept.css");
+@import url("content/designPatterns.css");

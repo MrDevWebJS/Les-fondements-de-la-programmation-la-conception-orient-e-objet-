@@ -1,0 +1,34 @@
+.main__analyeAProblem{
+    inline-size: 100%;
+    block-size: auto;
+}
+
+.analyseAProblem__title,
+.analyseAProblem__subTitle{
+    margin: 8px 0;
+    color: #3b82f6;
+}
+
+.analyseAProblem__title{
+    font-size: 1.75rem;
+}
+
+.analyseAProblem__subTitle{
+    font-size: 1.5rem;
+}
+
+.analyseAProblem__paragraph,
+.analyseAProblem__numberedDescriptiveList{
+    inline-size: 599px;
+    font-size: 1rem;
+}
+
+.analyseAProblem__paragraph--fontWeight{
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-top: 4px;
+}
+
+.analyseAProblem__numberedDescriptiveList{
+    margin-left: 16px;
+}

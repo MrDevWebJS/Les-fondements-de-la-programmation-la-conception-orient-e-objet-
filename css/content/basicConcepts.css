@@ -1,0 +1,34 @@
+.main__basicConcepts{
+    inline-size: 100%;
+    block-size: auto;
+}
+
+.basicConcepts__title,
+.basicConcepts__subTitle{
+    color: #3b82f6;
+    margin: 8px 0;
+}
+
+.basicConcepts__title{
+    font-size: 1.75rem;
+}
+
+.basicConcepts__subTitle{
+    font-size: 1.5rem;
+}
+
+.basicConcepts__paragraph,
+.basicConcepts__descriptiveList{
+    inline-size: 599px;
+    font-size: 1rem;
+}
+
+.basicConcepts__paragraph--fontWeight{
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-top: 4px;
+}
+
+.basicConcepts__descriptiveList{
+    margin-left: 16px;
+}

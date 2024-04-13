@@ -1,0 +1,12 @@
+.container__header{
+    inline-size: 100%;
+    block-size: auto;
+    padding: 16px;
+}
+
+.header__title{
+    font-family: "Tangerine", "sans-serif";
+    font-size: 4rem;
+    text-align: center;
+    color: #3b82f6;
+}

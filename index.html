@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La conception orientée objet</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/javaScript-logo.webp" type="image/x-icon">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="container__header">
+            <h1 class="header__title">
+                Les fondements de la programmation : La conception orientée objet
+            </h1>
+            <img src="./images/54-CertificatDaccomplissement_Le.webp">
+        </header>
+
+        <main class="main">
+            <section class="main__basicConcepts">
+                <h2 class="basicConcepts__title">Concepts de base de la conception orienté objet</h2>
+                
+                <h3 class="basicConcepts__subTitle">Deux approches de la programmation</h3>
+                <p class="basicConcepts__paragraph--fontWeight">Procédural:</p>
+                <ul class="basicConcepts__descriptiveList">
+                    <li>À base de fonctions qui ne contiennent pas les données.</li>
+                    <li>Le code est difficilement réutilisable tel que.</li>
+                    <li>Chaque fonction ou procédure est associée à un traitement particulier.</li>
+                    <li>Chaque fonction peut être réutilisée à différents emplacements d'un programme.</li>
+                    <li>Plus simple à conceptualiser.</li>
+                </ul>
+                
+                <p class="basicConcepts__paragraph--fontWeight">POO:</p>
+                <ul class="basicConcepts__descriptiveList">
+                    <li>À base d'objets qui contiennent les données.</li>
+                    <li>Le code est réutilisable.</li>
+                    <li>Le code est scindé en entités autonomes (classes).</li>
+                    <li>Les données sont protégées par l'encapsulation.</li>
+                </ul>
+                
+                <h3 class="basicConcepts__subTitle">La classe en programmation</h3>
+                <p class="basicConcepts__paragraph">Une classe permet de créer un ou plusieurs objets. Toutefois, une classe n'est pas considérée comme un objet. Elle décrit ce que seront les objets à venir.</p>
+                <p class="basicConcepts__paragraph--fontWeight">La composition d'une classe</p> 
+                <ul class="basicConcepts__descriptiveList">
+                    <li>Le nom</li>
+                    <li>Les propriétés</li>
+                    <li>les méthodes</li>
+                </ul>
+
+                <h3 class="basicConcepts__subTitle">Les objets en programmation</h3>
+                <p class="basicConcepts__paragraph">Un objet est une entité abstraite et autonome. Il posséde des propriétés qui permettent une description de lui-même, ainsi que des comportements caractérisés par des méthodes.</p>
+                <img src="./images/1-classeObjets.webp">
+                
+                <h3 class="basicConcepts__subTitle">Les 4 piliers de la Programmation Orientée Objet</h3>
+                <p class="basicConcepts__paragraph--fontWeight">L'abstraction</p>
+                <p class="basicConcepts__paragraph">Le rôle de l'abstraction est de ce focaliser sur l'essentiel et donc d'ignorer les détails.</p>
+                
+                <p class="basicConcepts__paragraph--fontWeight">L'encapsulation</p>
+                <p class="basicConcepts__paragraph">Cela fait référence au regroupement des propriétés et des méthodes au sein d'une seule unité, la classe. Il est également possible de restreindre l'accès aux informations de celle-ci.</p>
+                
+                <p class="basicConcepts__paragraph--fontWeight">L'héritage</p>
+                <p class="basicConcepts__paragraph">La notion d'héritage permet, par exemple, à une classe "enfant", de récupérer toutes les propriétés et méthodes de la classe "parent".</p>
+                <img src="./images/2-Lheritage.webp">
+                
+                <p class="basicConcepts__paragraph--fontWeight">Le polymorphisme</p>
+                <p class="basicConcepts__paragraph">Une classe "enfant", qui hérite des méthodes d’une classe "parent", peut modifier le comportement de certaines d'entre elles pour les adapter à ses propres besoins. On parle alors de polymorphisme d'héritage.</p>
+                <img src="./images/3-lePolymorphisme.webp">
+            </section>
+
+            <section class="main__analyseAProblem">
+                <h2 class="analyseAProblem__title">Analyser un problème en programmation</h2>
+                
+                <h3 class="analyseAProblem__subTitle">Le processus de conception orientée objet</h3>
+                <p class="analyseAProblem__paragraph">Ce processus comporte 5 points importants:</p>
+                <ol class="analyseAProblem__numberedDescriptiveList">
+                    <li>Recceuillir les <strong>besoins</strong>.</li>
+                    <li><strong>Décrire</strong> l'application.</li>
+                    <li><strong>Identifier</strong> les principaux objets.</li>
+                    <li>Décrire les <strong>intéractions</strong>.</li>
+                    <li>Créer un <strong>diagramme de classe</strong></li>
+                </ol>
+                
+                <h3 class="analyseAProblem__subTitle">La définition des besoins</h3>
+                <p class="analyseAProblem__paragraph--fontWeight">Besoins fonctionnels</p>
+                <p class="analyseAProblem__paragraph">Que font-ils ? Caractéristiques, capacités.</p>
+                <p class="analyseAProblem__paragraph">Exemple:<br> 
+                    l'application <strong>doit continuer à fonctionner sans connexion réseaux</strong>.
+                </p> 
+                <p>Elle <strong>doit permettre à l'utilisateur de créer des messages de 140 caractères</strong>.</p>
+                <p>Le programme <strong>doit permettre de générer des reçus par e-mail</strong>.</p>
+                <p>L'application <strong>permet à l'utilisateur de chercher par non de client, numéro de téléphone ou numéro de commande</strong>. etc</p>
+
+                <p class="analyseAProblem__paragraph--fontWeight">Besoins non fonctionnels</p>
+                <p class="analyseAProblem__paragraph">Aide, droit, performance, support, sécurité.</p>
+                <p class="analyseAProblem__paragraph">Exemple:<br>
+                    Le système <strong>doit répondre au recherche dans les 2 secondes</strong>.
+                </p>
+                <p class="analyseAProblem__paragraph"><strong>Le supponrt est disponible par téléphone, du lundi au vendredi, de 8h à 18h</strong>.</p>
+
+                <h3 class="analyseAProblem__subTitle">L'initiation à UML (unified modeling language)</h3>
+                <p class="analyseAProblem__paragraph">Langage de Modélisation Unifié. Ce langage n'est pas un langage de programmation. Il s'agit d'une notation graphique spécifique pour l'élaboration de schémas dans un système orientée objet.</p>
+            </section>
+
+            <section class="main__useCases">
+                <h2 class="useCases__title">Les cas d'utilisation de la conception orientée objet</h2>
+                <p class="useCases__paragraph">Ce processus nécessite de réunir 3 informations importantes:</p>
+                <ul class="useCases__descriptiveList">
+                    <li>L'<strong>objectif</strong>: le but de l'application.</li>
+                    <li>L'<strong>acteur</strong>: personne suceptible d'utiliser l'application.</li>
+                    <li>Le <strong>traitement</strong>: comment le problème est-il traité habituellement.</li>
+                </ul>
+                <p class="useCases__paragraph"><strong>Il est conseillé d'exprimer l'objectif à l'aide de phrase courte tel que</strong>:</p>
+                <ul class="useCases__descriptiveList">
+                    <li>Enregistrer un nouveau membre.</li>
+                    <li>Transférer des fonds.</li>
+                    <li>Acheter des articles.</li>
+                    <li>etc ...</li>
+                </ul>
+                <p class="useCases__paragraph"><strong>Le scénario représente le détail permettant d'atteindre l'objectif fixé</strong>. Il doit être rédigé dans un langage simple. Il est possible d'utiliser les listes à puces, pour faciliter sa rédaction, ainsi que sa lisibilité. Il doit également comprendre, la gestion des cas comme, les ruptures de stock, les commandes utilisateur non finalisé, etc ...</p>
+                
+                <h3 class="useCases__subTitle">L'identification des acteurs</h3>
+                <p class="useCases__paragraph">Dépendamment de la nature du projet (application, logiciel, etc...) les acteurs peuvent être des systèmes externes / organisations. Il est donc nécessaire de les identifier. (Sources de données externes, service web, autres applications d'entreprise ...)</p>
+                <p class="useCases__paragraph">Concernant les acteurs humains, il peut être nécessaire de définir les rôles des personnes. Il faut mettre l'accent sur l'objectif que l'acteur veut accomplir en tenant compte qu'il peut occuper différentes fonctions (directeur, responsable des achats, équipe de production, équipe de direction etc...)</p>
+                <img src="./images/4-lesActeurs.webp">
+                <img src="./images/5-identificationDesActeurs.webp">
+                <p class="useCases__paragraph">Pour simplifier l'identification, il est possible de définir quel sont les principaux acteurs et les acteurs secondaires.</p>
+                <img src="./images/6-regroupementDesActeurs.webp">
+
+                <h3 class="useCases__subTitle">L'identification des scénarios</h3>
+                <p class="useCases__paragraph">Lors de l'identification d'un scénario, l'objectif que l'acteur souhaite accomplir est très important. Il est nécessaire de mettre l'accent sur l'objectif.</p>
+                <p class="useCases__paragraph">Il faut également prendre en compte les scénarios multiples.</p>
+                <img src="./images/7-multiplesScenarios.webp">
+                <p class="useCases__paragraph">La rédaction du scénario doit se faire à l'aide de phrases courtes et conçises. Il est important de mettre l'accent sur l'objectif et d'éviter de rentré dans une technicité qui n'est pas nécessaire dans ce cas.</p>
+                <p class="useCases__paragraph">Une fois la rédaction du scénario terminé, il ne faut pas hésiter à ce poser quelques questions pour être certain de ne rien oublier.</p>
+                <ul class="useCases__descriptiveList">
+                    <li>Qui effectue les tâches d'administration du système ?</li>
+                    <li>Qui gère les utilisateurs et la sécurité ?</li>
+                    <li>Qu'advient-il si le système tombe en panne ?</li>
+                </ul>
+
+                <h3 class="useCases__subTitle">Réalisation d'un diagramme de cas d'utilisation</h3>
+                <p class="useCases__paragraph">Il sert à représenter l'intéraction qu'il peut y avoir entre plusieurs cas d'utilisation et plusieurs acteurs entre eux. Cepandant ce n'est pas une substitution au schéma d'un cas d'utilisation.</p>
+                <img src="./images/8-diagrammeCasDutilisation.webp">
+
+                <h3 class="useCases__subTitle">Définition d'une user story | description des besoins de l'utilisateur</h3>
+                <p class="useCases__paragraph">C'est un format plus simple et plus court qu'un cas d'utilisation. Il décrit un petit scénario du point de vue exclusif de l'utilisateur concentré uniquement sur ses objectifs.</p>
+                <p class="useCases__paragraph">Ce format comporte 3 points:</p>
+                <ol class="useCases__descriptiveList">
+                    <li>Le type d'utilisateur</li>
+                    <li>les besoins de l'utilisateur</li>
+                    <li>La raison de ses besoins (pourquoi ?)</li>
+                </ol>
+                <p class="useCases__paragraph">Exemple:<br>
+                Je suis un <strong>client</strong> d'une boutique en ligne, j'aimerai avoir la possibilité d'<strong>effectuer une recherche par mot clé</strong>, pour <strong>trouver des articles pertinents</strong>.</p>
+                
+                <h3 class="useCases__subTitle">En résumé:</h3>
+                <img src="./images/9-ResumeDes2Solutions.webp">
+            </section>
+            
+            <section class="main__modeling">
+                <h2 class="modeling__title">Initiation à la modélisation</h2>
+                
+                <h3 class="modeling__subTitle">Création d'un modèle conceptuel</h3>
+                <p class="modeling__paragraph">Il s'agit d'identifier les objets les plus importants de la futur application.</p>
+
+                <h3 class="modeling__subTitle">Identification des objets</h3>
+                <img src="./images/10-identificationDesObjets.webp">
+                <p class="modeling__paragraph">Une fois l'identification terminé, les futurs objets sont listé de façon à vérifier s'il n'y a pas redondance de l'information.</p>
+                <img src="./images/11-listeDesObjets.webp">
+
+                <h3 class="modeling__subTitle">Identification des relations entre les objets</h3>
+                <img src="./images/12-modeleConceptuel.webp">
+
+                <h3 class="modeling__subTitle">Identification des responsabilités</h3>
+                <img src="./images/13-identificationDesResponsabili.webp">
+                
+                <h3 class="modeling__subTitle">Affectation des responsabilités</h3>
+                <p class="modeling__paragraph">Exemple d'affection:<br>
+                Le fait de vérifier l'état de la commande est initié par le client.<br>
+                Question: la vérification doit se faire par le client ou par la commande ?<br>
+                Sachant qu'un objet doit être responsable de lui même, Le responsable de la vérification de la commande est la commande et non le client.</p>
+                <img src="./images/14-affectationDesResponsabilités.webp">
+                
+                <p class="modeling__paragraph">Dans le schéma d'affectation, le client n'a aucune responsabilité alors que la commande en possède un grand nombre.<br>
+                Il est important de garder en permanence à l'esprit, que ce n'est pas celui qui initie une action, qui en a forcément la responsabilité.<br>
+                La répartition des responsabilités à différents objets est importante. Cela permet d'avoir un certain équilibre au sein de l'application.</p>
+
+                <h3 class="modeling__subTitle">L'utilisation des CRC</h3>
+                <ul class="modeling__descriptiveList">
+                    <li>C: Classe: le nom de la classe.</li>
+                    <li>R: Responsabilité: la prise en charge.</li>
+                    <li>C: Colaborateur: les classes qui intéragissent avec la classe en question.</li>
+                </ul>
+                <img src="./images/15-CRC.webp">
+                <img src="./images/16-CRCExemple.webp">
+                <img src="./images/17-CRCCards.webp">
+                <p class="modeling__paragraph">Lors de l'utilisation des cartes CRC, si une classe a besoin de deux cartes, ceci est un indice incitant a repenser la classe en question.</p>
+            </section>
+
+            <section class="main__creatingClasses">
+                <h2 class="creatingClasses__title">Création des classes orientées objet</h2>
+                
+                <h3 class="creatingClasses__subTitle">Création du diagramme de classe</h3>
+                <p class="creatingClasses__paragraph">Pour la création d'une classe, 3 éléments sont nécessaires:</p>
+                <ol class="creatingClasses__numberedDescriptiveList">
+                    <li>Le nom</li>
+                    <li>Les propriétés</li>
+                    <li>Les méthodes</li>
+                </ol>
+                <p class="creatingClasses__paragraph">Une classe se nomme toujours au singulier, et commence par une majuscule.</p>
+                <p class="creatingClasses__paragraph">Dans un diagramme de classe, les signes "+" et "-", représentent la visibilité de la propriété et/ou de la méthode à l'extérieur de la classe. <strong>Cette pratique, renvoie à l'un des piliers de la POO, c'est l'encapsulation</strong>.</p>
+                <img src="./images/18-diagrammeDeClasse.webp">
+
+                <h3 class="creatingClasses__subTitle">Conversion d'un diagramme de classe dans différents langages de programmation</h3>
+                <img src="./images/19-conversionDunDiagrammeDeClasse.webp">
+                <img src="./images/20-conversionEnJAVA.webp">
+                <img src="./images/21-conversionEnCSharp.webp">
+                <img src="./images/22-conversionEnVB.NET.webp">
+                <img src="./images/23-conversionEnRuby.webp">
+                <img src="./images/24-conversionEnObjective-C.webp">
+
+                <h3 class="creatingClasses__subTitle">Constructeur</h3>
+                <img src="./images/25-exempleDeConstructeur.webp">
+                <p class="creatingClasses__paragraph">L'ajout de la méthode portant le nom de la classe permet d'attribuer les valeurs de propriétés souhaitées lors de l'instanciation de la classe.</p>
+                
+                <h3 class="creatingClasses__subTitle">Constructeur en UML</h3>
+                <img src="./images/26-constructeurEnUML.webp">
+                <img src="./images/27-construsteursMultiplesEnUML.webp">
+                <p class="creatingClasses__paragraph">La surcharge permet d'intancier plusieurs objets ayant des valeurs de propriétés différentes avec une même classe.</p>
+                
+                <h3 class="creatingClasses__subTitle">Destructeur</h3>
+                <p class="creatingClasses__paragraph">La destruction d'un objet inutilisé permet de récupérer des ressources en mémoire.</p>
+
+                <h3 class="creatingClasses__subTitle">Utilisation d'une propriété statique / partagée</h3>
+                <img src="./images/28-proprietesStatiquesPartages.webp">
+                <img src="./images/29-proprietesStatiquesPartages.webp">
+                <img src="./images/30-proprietesStatiquesPartages.webp">
+                <img src="./images/31-variableStatique.webp">
+                <img src="./images/32-accesAuxDonnees.webp">
+                <img src="./images/33-methodesStatiques.webp">
+                <img src="./images/34-proprietesStatiquesEnUML.webp">
+            </section>
+            
+            <section class="main__discovery">
+                <h2 class="discovery__title">Découverte de l'héritage, l'interface, l'agrégation et la composition</h2>
+                <h3 class="discovery__subTitle">Identification des situations d'héritage</h3>
+                <img src="./images/35-notionsDheritage.webp">
+                
+                <h3 class="discovery__subTitle">Utilisation de l'héritage</h3>
+                <img src="./images/37-heritageEnFonctionDuLangage.webp">
+                <img src="./images/36-polymorphismeDheritage.webp">
+
+                <h3 class="discovery__subTitle">Appeler une méthode dans la superClasse</h3>
+                <img src="./images/38-appellerUneMethodeDeLaSupercl.webp">
+
+                <h3 class="discovery__subTitle">Utilisation des classes abstraites</h3>
+                <p class="discovery__paragraph">Une classe abstraite est une classe qui n'est pas instancier. Cepandent, si elle a des enfants, ses propriétés et méthodes restent disponibles.En JAVA et en C#, Il suffit de faire précéder le nom de la classe par le mot clé <strong>abstract</strong>. le principe de la classe abstraite n'est pas disponible avec tout les langages de programmation.</p>
+
+                <h3 class="discovery__subTitle">Utilisation d'une interface</h3>
+                <p class="discovery__paragraph">Il s'agit d'un regroupement contenant la signature des méthodes disponibles pour différentes classes.</p>
+                <img src="./images/39-utilisationDuneInterface.webp">
+                <p class="discovery__paragraph">L'utilisation des méthodes disponibles dans un interface se fait via une classe grâce au mot clé <strong>implements</strong>.</p>
+                <img src="./images/40-implementationDuneInterface.webp">
+                <p class="discovery__paragraph">Il est important d'implementer toutes les méthodes présentent dans l'interface, car lors de la compilation, si une méthode n'est pas implémenté, cela provoquera une erreur.</p>
+                <img src="./images/41-utilisationDuneMethodeDeLinte.webp">
+
+                <h3 class="discovery__subTitle">Implémentation d'une interface en UML</h3>
+                <img src="./images/42-implementationDuneInterfaceEn.webp">
+
+                <h3 class="discovery__subTitle">Utilisation des agrégations et de la composition</h3>
+                <p class="discovery__paragraph">L'agrégation permet de définir une entité comme étant lié à plusieurs entités d'une classe.<br>
+                Exemple:<br>
+                Une université <strong>a beaucoup</strong> d'étudiants.</p>
+                <h3 class="discovery__subTitle">Agrégations et composition en UML</h3>
+                <img src="./images/43-agregationEtCompositionEnUML.webp">
+                <p class="discovery__paragraph">La composition contrairement à l'agrégation, induit la notion de propriété.</p>
+            </section>
+
+            <section class="main__advancedConcept">
+                <h2 class="advancedConcept__title">Concepts avancés de la POO</h2>
+                <p class="advancedConcept__paragraph">Les diagrammes de classe vu précédemment rentrent dans la catégorie des diagrammes structurels et/ou statiques</p>
+                <img src="./images/44-diagrammeStatique-DeClasse.webp">
+                <p class="advancedConcept__paragraph">Ils sont pratique pour la représentation de différents élements tel que, la liste des classes dans une application, l'héritage et la composition, il permettent également de visualiser comment les acteurs intéragissent avec un système. En revanche ils ne sont pas adaptés pour représenter la durée de vie d'un objet ou encore l'intéraction de différents objets entre eux.</p>
+
+                <h3 class="advancedConcept__subTitle">Création d'un diagramme de séquence</h3>
+                <img src="./images/45-diagrammeDeSequence.webp">
+
+                <h3 class="advancedConcept__subTitle">Les différents diagrammes UML</h3>
+                <img src="./images/46-LesDifferentsDiagrammesUML.webp">
+
+                <h3 class="advancedConcept__subTitle">Le diagramme d'état-transition</h3>
+                <p class="advancedConcept__paragraph">Il permet de mettre en avant les différents états qu'un objet peut avoir au cours de sa vie, et également, le fonctionnement lors de la transition d'un état à l'autre.</p>
+                <img src="./images/47-diagrammeEtatTransition.webp">
+
+                <h3 class="advancedConcept__subTitle">Le diagramme d'activité</h3>
+                <img src="./images/48-diagrammeDactivite.webp">
+
+                <h3 class="advancedConcept__subTitle">Différents outils UML</h3>
+                <img src="./images/49-outilsUML.webp">
+            </section>
+
+            <section class="main__designPatterns">
+                <h2 class="designPatterns__title">Les patrons de conception ou design patterns</h2>
+                <p class="designPatterns__paragraph">C'est un concept destiné à resoudre des problèmes récurrents en orientation objet. Il servent à décrire des procédés de conception généraux indépendant du langage de programmation utilisé. Ils figurent parmis les bonnes pratiques en programmation.</p>
+                
+                <h3 class="designPatterns__subTitle">Les principes généraux</h3>
+                <p class="designPatterns__paragraph">Les design patterns sont divisés en trois groupe.</p>
+                <ol class="designPatterns__numberedDescriptiveList">
+                    <li><strong>les modèles de création ou creational patterns</strong>: ils traitent de la création des objets.</li>
+                    <li><strong>Les modèles structurels ou structural patterns</strong>: ils traitent la façon dont les classes sont conçus. Ils sont utiles avec les notions d'héritage, de composition, d'agrégation etc...</li>
+                    <li><strong>les modèles de comportement ou behavioral patterns</strong>: ils se concentrent sur la communication entre les objets du programme en cours d'exécution.</li>
+                </ol>
+                <img src="./images/50-lesPatronsDeConception.webp">
+
+                <h3 class="advancedConcept__subTitle">Le Singleton</h3>
+                <p class="advancedConcept__paragraph">Ils permet d'avoir une seule intance d'une classe dans une application. Sa mise en oeuvre est représenté par un classe contenant une méthode statique créant une instance, uniquement si il n'en existe pas déjà une. Sinon elle renvoie voir l'objet existant.</p>
+                <img src="./images/51-exempleSingletonEnJAVA.webp">
+                <img src="./images/52-utilisationDuSingletonEnJAVA.webp">
+
+                <h3 class="advancedConcept__subTitle">Le Memento</h3>
+                <p class="advancedConcept__paragraph">Il permet d'annuler un état à l'intérieur d'un objet sans violer l'encapsulation.</p>
+                <img src="./images/53-patronDeConceptionMemento.webp">
+            </section>
+        </main>
+    </div>
+</body>
+</html>
